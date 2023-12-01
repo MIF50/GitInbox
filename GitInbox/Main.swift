@@ -4,10 +4,10 @@ import SwiftUI
 struct Main {
     
     static func main() {
-//        if NSClassFromString("XCTestCase") != nil {
-//            EmptyApp.main()
-//        } else {
+        if NSClassFromString("XCTestCase") != nil {
+            TestApp.main()
+        } else {
             GitInboxApp.main()
-//        }
+        }
     }
 }

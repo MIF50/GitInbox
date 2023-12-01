@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B58DAA472B19C0B6003ABACA /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DAA462B19C0B6003ABACA /* Main.swift */; };
+		B58DAA492B19C31C003ABACA /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DAA482B19C31C003ABACA /* TestApp.swift */; };
 		B5B6724A2B1950B100CC80DE /* GitInboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B672492B1950B100CC80DE /* GitInboxApp.swift */; };
 		B5B6724C2B1950B100CC80DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B6724B2B1950B100CC80DE /* ContentView.swift */; };
 		B5B6724E2B1950B100CC80DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B6724D2B1950B100CC80DE /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		B58DAA462B19C0B6003ABACA /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		B58DAA482B19C31C003ABACA /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
 		B5B672462B1950B100CC80DE /* GitInbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitInbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B672492B1950B100CC80DE /* GitInboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitInboxApp.swift; sourceTree = "<group>"; };
 		B5B6724B2B1950B100CC80DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				B58DAA462B19C0B6003ABACA /* Main.swift */,
+				B58DAA482B19C31C003ABACA /* TestApp.swift */,
 				B5B672492B1950B100CC80DE /* GitInboxApp.swift */,
 				B5B6724B2B1950B100CC80DE /* ContentView.swift */,
 				B5B6724D2B1950B100CC80DE /* Assets.xcassets */,
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B58DAA472B19C0B6003ABACA /* Main.swift in Sources */,
+				B58DAA492B19C31C003ABACA /* TestApp.swift in Sources */,
 				B5B6724C2B1950B100CC80DE /* ContentView.swift in Sources */,
 				B5B6724A2B1950B100CC80DE /* GitInboxApp.swift in Sources */,
 			);
