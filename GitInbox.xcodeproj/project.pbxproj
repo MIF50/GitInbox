@@ -32,6 +32,7 @@
 		B5B672502B1950B100CC80DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5B6725B2B1950C600CC80DE /* GitInboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitInboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B6725D2B1950C600CC80DE /* GitInboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitInboxTests.swift; sourceTree = "<group>"; };
+		B5B672642B1963E500CC80DE /* GitInboxTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GitInboxTests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		B5B6723D2B1950B000CC80DE = {
 			isa = PBXGroup;
 			children = (
+				B5B672642B1963E500CC80DE /* GitInboxTests.xctestplan */,
 				B5B672482B1950B100CC80DE /* GitInbox */,
 				B5B6725C2B1950C600CC80DE /* GitInboxTests */,
 				B5B672472B1950B100CC80DE /* Products */,
