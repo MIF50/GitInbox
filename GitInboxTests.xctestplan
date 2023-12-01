@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "9CF81BE3-58FC-423F-B32C-055AD1FF4A31",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:GitInbox.xcodeproj",
+      "identifier" : "B5B672452B1950B100CC80DE",
+      "name" : "GitInbox"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:GitInbox.xcodeproj",
+        "identifier" : "B5B6725A2B1950C600CC80DE",
+        "name" : "GitInboxTests"
+      }
+    }
+  ],
+  "version" : 1
+}
