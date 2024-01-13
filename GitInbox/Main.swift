@@ -4,7 +4,7 @@ import SwiftUI
 struct Main {
     
     static func main() {
-        if NSClassFromString("XCTestCase") != nil {
+        guard NSClassFromString("XCTestCase") == nil else {
             TestApp.main()
             return
         }
