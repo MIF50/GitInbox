@@ -14,7 +14,8 @@ final class GamingViewTests: XCTestCase {
     
     func test_tappingCircle_turnsItOrange() throws {
         var sut = GamingView()
-        var color = try sut.inspect().button().labelView().shape().foregroundStyleShapeStyle(Color.self)
+        let inspectedView = try sut.inspect()
+        var color = try inspectedView.button().labelView().shape().foregroundStyleShapeStyle(Color.self)
         XCTAssertNotEqual(color, Color.orange, "Precondition")
         
         display(&sut) { view in
