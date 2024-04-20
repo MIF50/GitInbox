@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B51FD1E22BD3D5F500785ECD /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = B51FD1E12BD3D5F500785ECD /* ViewInspector */; };
 		B58D03A62B1FC59000CAEA42 /* GamingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D03A52B1FC59000CAEA42 /* GamingViewTests.swift */; };
 		B58DAA472B19C0B6003ABACA /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DAA462B19C0B6003ABACA /* Main.swift */; };
 		B58DAA492B19C31C003ABACA /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DAA482B19C31C003ABACA /* TestApp.swift */; };
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51FD1E22BD3D5F500785ECD /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +141,9 @@
 				B5B672602B1950C600CC80DE /* PBXTargetDependency */,
 			);
 			name = GitInboxTests;
+			packageProductDependencies = (
+				B51FD1E12BD3D5F500785ECD /* ViewInspector */,
+			);
 			productName = GitInboxTests;
 			productReference = B5B6725B2B1950C600CC80DE /* GitInboxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -172,6 +177,9 @@
 				Base,
 			);
 			mainGroup = B5B6723D2B1950B000CC80DE;
+			packageReferences = (
+				B51FD1E02BD3D5F500785ECD /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = B5B672472B1950B100CC80DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -495,6 +503,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B51FD1E02BD3D5F500785ECD /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.10;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B51FD1E12BD3D5F500785ECD /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B51FD1E02BD3D5F500785ECD /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B5B6723E2B1950B000CC80DE /* Project object */;
 }
