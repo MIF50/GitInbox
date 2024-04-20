@@ -12,6 +12,21 @@ import SwiftUI
 
 final class GamingViewTests: XCTestCase {
     
+    func test_tappingCircle_turnsItOrange() throws {
+        var sut = GamingView()
+        var color = try sut.inspect().button().labelView().shape().foregroundStyleShapeStyle(Color.self)
+        XCTAssertNotEqual(color, Color.orange, "Precondition")
+        
+        display(&sut) { view in
+            try view.button().tap()
+            color = try self.getColorOfGuess(view)
+        }
+        
+        XCTAssertEqual(color, Color.orange)
+    }
+    
+    //MARK: - Helpers
+    
     private func display(
         _ sut: inout GamingView,
         using: @escaping((InspectableView<ViewType.View<GamingView>>) throws -> Void)
@@ -21,17 +36,9 @@ final class GamingViewTests: XCTestCase {
         wait(for: [exp], timeout: 0.01)
     }
     
-    func test_tappingCircle_turnsItOrange() throws {
-        var sut = GamingView()
-        var color = try sut.inspect().button().labelView().shape().foregroundStyleShapeStyle(Color.self)
-        XCTAssertNotEqual(color, Color.orange, "Precondition")
-        
-        display(&sut) { view in
-            try view.button().tap()
-            color = try view.button().labelView().shape().foregroundStyleShapeStyle(Color.self)
-        }
-        
-        XCTAssertEqual(color, Color.orange)
+    private func getColorOfGuess(_ view: InspectableView<ViewType.View<GamingView>>) throws -> Color {
+        try view.button().labelView().shape().foregroundStyleShapeStyle(Color.self)
     }
+
 }
 
