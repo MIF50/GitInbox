@@ -12,18 +12,24 @@ import SwiftUI
 
 final class GamingViewTests: XCTestCase {
     
+    private func display(
+        _ sut: inout GamingView,
+        using: @escaping((InspectableView<ViewType.View<GamingView>>) throws -> Void)
+    ) {
+        let exp = sut.on(\.viewInspectorHook,perform: using)
+        ViewHosting.host(view: sut)
+        wait(for: [exp], timeout: 0.01)
+    }
+    
     func test_tappingCircle_turnsItOrange() throws {
         var sut = GamingView()
         var color = try sut.inspect().button().labelView().shape().foregroundStyleShapeStyle(Color.self)
         XCTAssertNotEqual(color, Color.orange, "Precondition")
         
-        let exp = sut.on(\.viewInspectorHook) { view in
+        display(&sut) { view in
             try view.button().tap()
             color = try view.button().labelView().shape().foregroundStyleShapeStyle(Color.self)
         }
-        
-        ViewHosting.host(view: sut)
-        wait(for: [exp], timeout: 0.1)
         
         XCTAssertEqual(color, Color.orange)
     }
