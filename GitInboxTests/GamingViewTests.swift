@@ -14,12 +14,12 @@ final class GamingViewTests: XCTestCase {
     
     func test_tappingCircle_turnsItOrange() throws {
         var sut = GamingView()
-        var color = try getColorOfGuess2(try sut.inspect())
+        var color = try getColorOfGuess(try sut.inspect())
         XCTAssertNotEqual(color, Color.orange, "Precondition")
         
         display(&sut) { view in
             try view.button().tap()
-            color = try self.getColorOfGuess2(view)
+            color = try self.getColorOfGuess(view)
         }
         
         XCTAssertEqual(color, Color.orange)
@@ -36,11 +36,7 @@ final class GamingViewTests: XCTestCase {
         wait(for: [exp], timeout: 0.01)
     }
     
-    private func getColorOfGuess(_ view: InspectableView<ViewType.View<GamingView>>) throws -> Color {
-        try view.button().labelView().shape().foregroundStyleShapeStyle(Color.self)
-    }
-    
-    private func getColorOfGuess2<V: ViewInspector.KnownViewType>(_ view: InspectableView<V>) throws -> Color? {
+    private func getColorOfGuess<V: ViewInspector.KnownViewType>(_ view: InspectableView<V>) throws -> Color? {
         try view.asInspectableView().button().labelView().shape().foregroundStyleShapeStyle(Color.self)
     }
 
