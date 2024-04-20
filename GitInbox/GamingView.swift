@@ -9,8 +9,7 @@ import SwiftUI
 
 struct GamingView: View {
     @State private var buttonColor = Color.red
-    var didAppear: ((Self) -> Void)?
-
+    var viewInspectorHook: ((Self) -> Void)?
     
     var body: some View {
         
@@ -19,7 +18,7 @@ struct GamingView: View {
         }, label: {
             Circle().foregroundStyle(buttonColor)
         })
-        .onAppear { self.didAppear?(self) }
+        .onAppear { self.viewInspectorHook?(self) }
     }
 }
 
