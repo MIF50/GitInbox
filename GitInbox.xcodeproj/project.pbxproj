@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B58D03A62B1FC59000CAEA42 /* PlaceholderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D03A52B1FC59000CAEA42 /* PlaceholderTests.swift */; };
+		B58D03A62B1FC59000CAEA42 /* GamingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D03A52B1FC59000CAEA42 /* GamingViewTests.swift */; };
 		B58DAA472B19C0B6003ABACA /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DAA462B19C0B6003ABACA /* Main.swift */; };
 		B58DAA492B19C31C003ABACA /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DAA482B19C31C003ABACA /* TestApp.swift */; };
 		B5B6724A2B1950B100CC80DE /* GitInboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B672492B1950B100CC80DE /* GitInboxApp.swift */; };
@@ -27,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B58D03A52B1FC59000CAEA42 /* PlaceholderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTests.swift; sourceTree = "<group>"; };
+		B58D03A52B1FC59000CAEA42 /* GamingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamingViewTests.swift; sourceTree = "<group>"; };
 		B58DAA462B19C0B6003ABACA /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		B58DAA482B19C31C003ABACA /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
 		B5B672462B1950B100CC80DE /* GitInbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitInbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,7 +100,7 @@
 		B5B6725C2B1950C600CC80DE /* GitInboxTests */ = {
 			isa = PBXGroup;
 			children = (
-				B58D03A52B1FC59000CAEA42 /* PlaceholderTests.swift */,
+				B58D03A52B1FC59000CAEA42 /* GamingViewTests.swift */,
 			);
 			path = GitInboxTests;
 			sourceTree = "<group>";
@@ -217,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B58D03A62B1FC59000CAEA42 /* PlaceholderTests.swift in Sources */,
+				B58D03A62B1FC59000CAEA42 /* GamingViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
