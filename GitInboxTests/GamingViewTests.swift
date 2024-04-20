@@ -20,11 +20,12 @@ final class GamingViewTests: XCTestCase {
         let exp = sut.on(\.didAppear) { view in
             try view.button().tap()
             color = try view.button().labelView().shape().foregroundStyleShapeStyle(Color.self)
-            XCTAssertEqual(color, Color.orange)
         }
         
         ViewHosting.host(view: sut)
         wait(for: [exp], timeout: 0.1)
+        
+        XCTAssertEqual(color, Color.orange)
     }
 }
 
