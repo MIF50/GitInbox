@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GamingView: View {
     var body: some View {
-        Circle().fill(Color.red)
+        Circle().foregroundStyle(Color.red)
     }
 }
 
